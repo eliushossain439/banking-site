@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit site</title>
+    <!-- tailwind cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="mt-12 w-3/4 mx-auto bg-yellow-200 p-12">
+        <section class="">
+            <div class="grid grid-cols-3 gap-4 ">
+                <div class="bg-green-200 text-center p-3">
+                    <h1 class="">Deposit</h1>
+                    <h1 class="text-3xl font-bold">$<span id="deposit-amount">00</span></h1>
+                </div>
+                <div class="bg-red-700 text-center p-3">
+                    <h1 class="">Withdraw</h1>
+                    <h1 class="text-3xl">$<span id="withdraw-amount">00</span></h1>
+                </div>
+                <div class="bg-blue-500 text-center p-3">
+                    <h1 class="">Total deposit</h1>
+                    <h1 class="text-3xl text-white">$<span id="total-deposit">1200</span></h1>
+                </div>
+
+            </div>
+        </section>
+        <!-- deposit & withdrow section -->
+        <div class="grid grid-cols-2 gap-4 mt-16">
+            <div class="text-center"><input id="deposit-input" class="block m-3 p-2 mx-auto w-2/4" type="text"
+                    placeholder="enter deposit Amount...">
+
+                <button id="deposit-btn" class="btn bg-blue-100 p-2 font-bold">deposit</button>
+            </div>
+            <!-- withdraw button -->
+            <div class="text-center"><input id="withdraw-input" class="block m-3 p-2 mx-auto w-2/4" type="text"
+                    placeholder="enter withdrow Amount..">
+
+                <button id="withdraw-btn" class="btn bg-blue-100 p-2 font-bold">Withdrow</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="banking.js"></script>
+</body>
+
+</html>
